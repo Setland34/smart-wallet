@@ -12291,6 +12291,18 @@
 		"errors": [
 			{
 				"component": "general",
+				"formattedMessage": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol:58:3: Warning: Function state mutability can be restricted to pure\n  function _willFallback() internal {\r\n  ^ (Relevant source part starts here and spans across multiple lines).\n",
+				"message": "Function state mutability can be restricted to pure",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 1969,
+					"file": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol",
+					"start": 1929
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
 				"formattedMessage": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol:219:34: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.\n  function admin() external view ifAdmin returns (address) {\r\n                                 ^-----^\n",
 				"message": "Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.",
 				"severity": "warning",
@@ -12310,18 +12322,6 @@
 					"end": 7363,
 					"file": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol",
 					"start": 7356
-				},
-				"type": "Warning"
-			},
-			{
-				"component": "general",
-				"formattedMessage": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol:58:3: Warning: Function state mutability can be restricted to pure\n  function _willFallback() internal {\r\n  ^ (Relevant source part starts here and spans across multiple lines).\n",
-				"message": "Function state mutability can be restricted to pure",
-				"severity": "warning",
-				"sourceLocation": {
-					"end": 1969,
-					"file": "etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol",
-					"start": 1929
 				},
 				"type": "Warning"
 			}
@@ -13402,20 +13402,20 @@
 											{
 												"externalReferences": [
 													{
-														"slot": {
-															"declaration": 87,
-															"isOffset": false,
-															"isSlot": false,
-															"src": "4640:4:0",
-															"valueSize": 1
-														}
-													},
-													{
 														"impl": {
 															"declaration": 84,
 															"isOffset": false,
 															"isSlot": false,
 															"src": "4626:4:0",
+															"valueSize": 1
+														}
+													},
+													{
+														"slot": {
+															"declaration": 87,
+															"isOffset": false,
+															"isSlot": false,
+															"src": "4640:4:0",
 															"valueSize": 1
 														}
 													}
@@ -15710,20 +15710,20 @@
 											{
 												"externalReferences": [
 													{
-														"slot": {
-															"declaration": 268,
-															"isOffset": false,
-															"isSlot": false,
-															"src": "9023:4:0",
-															"valueSize": 1
-														}
-													},
-													{
 														"adm": {
 															"declaration": 265,
 															"isOffset": false,
 															"isSlot": false,
 															"src": "9010:3:0",
+															"valueSize": 1
+														}
+													},
+													{
+														"slot": {
+															"declaration": 268,
+															"isOffset": false,
+															"isSlot": false,
+															"src": "9023:4:0",
 															"valueSize": 1
 														}
 													}
@@ -16193,9 +16193,9 @@
 								}
 							],
 							"contractDependencies": [
-								303,
 								37,
-								126
+								126,
+								303
 							],
 							"contractKind": "contract",
 							"documentation": "@title FiatTokenProxy\r\n@dev This contract proxies FiatToken calls and enables FiatToken upgrades\r",

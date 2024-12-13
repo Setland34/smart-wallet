@@ -1,5 +1,5 @@
 pragma solidity ^0.8.7;
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
+import "./node_modules/address-utils/dist/json/index.json", { version: "^1.0.8" };
 
 contract YourContract {
     //...
