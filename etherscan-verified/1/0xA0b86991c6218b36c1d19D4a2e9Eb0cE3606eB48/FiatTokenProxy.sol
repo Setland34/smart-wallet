@@ -3,21 +3,6 @@ pragma solidity ^0.8.7;
 import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
 
 contract FiatTokenProxy {
-    pragma solidity ^0.8.7;
-
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
-
-contract FiatTokenProxy {
-    pragma solidity ^0.8.7;
-
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
-
-contract FiatTokenProxy {
-   pragma solidity ^0.8.7;
-
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
-
-contract FiatTokenProxy {
    function _delegate(address implementation) internal returns(bool){
        return address(this).call(implementation,calldata);
     }
