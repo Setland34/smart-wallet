@@ -1,21 +1,27 @@
 pragma solidity ^0.8.7;
-import "./node_modules/address-utils/dist/json/index.json", { version: "^1.0.8" };
 
-contract YourContract {
-    //...
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
 
-function _delegate(address implementation) internal { 
-assembly{
- result:=not (iszero( delegatecall(gas,implementation ,calldata, 4)))
-            
-           if not(result){
-               revert("Failed delegation")
-}
-       }
-   }
+contract FiatTokenProxy {
+    pragma solidity ^0.8.7;
 
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
+
+contract FiatTokenProxy {
+    pragma solidity ^0.8.7;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
+
+contract FiatTokenProxy {
+   pragma solidity ^0.8.7;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
+
+contract FiatTokenProxy {
+   function _delegate(address implementation) internal returns(bool){
+       return address(this).call(implementation,calldata);
+    }
 //...
-}
 
 // File: zos-lib/contracts/upgradeability/Proxy.sol
 

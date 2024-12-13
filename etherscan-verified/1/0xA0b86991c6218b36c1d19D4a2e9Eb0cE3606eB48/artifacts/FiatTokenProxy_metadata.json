@@ -173,9 +173,9 @@
 	},
 	"sources": {
 		"etherscan-verified/1/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/FiatTokenProxy.sol": {
-			"keccak256": "0xea48c87ceb370ce992a18915b0ca1a12dc8162b457ba423d94206beebcd5355f",
+			"keccak256": "0x25e2e53539bc494270578ae9a97aa4ae6ae90f9818d2e42b053660c78eaa10be",
 			"urls": [
-				"bzzr://219994f5e288ccb13071b697747f5858a875687050ac8be60b4b6a60bb84079a"
+				"bzzr://8ef3cced4f65374da4f256cc01cad44ffa1f31538abf1cdf16302993146f43f8"
 			]
 		}
 	},
