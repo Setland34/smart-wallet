@@ -1,4 +1,21 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.8.7;
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
+
+contract YourContract {
+    //...
+
+function _delegate(address implementation) internal { 
+assembly{
+ result:=not (iszero( delegatecall(gas,implementation ,calldata, 4)))
+            
+           if not(result){
+               revert("Failed delegation")
+}
+       }
+   }
+
+//...
+}
 
 // File: zos-lib/contracts/upgradeability/Proxy.sol
 
