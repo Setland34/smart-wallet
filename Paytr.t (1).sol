@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.26;
+pragma solidity 0.8.6;
 
 import {Test, console2, Vm} from "forge-std/Test.sol";
 import {Paytr} from "../src/Paytr.sol";
