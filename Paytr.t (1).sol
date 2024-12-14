@@ -15,8 +15,18 @@ interface IComet {
     function baseTrackingAccrued(address account) external view returns (uint64);
 }
 
-contract PaytrTest is Test, Paytr_Helpers {
-    using SafeERC20 for IERC20;
+// Incorrect declaration
+function myFunction() public {
+    // ...
+}
+
+// Corrected declaration with correct visibility modifier (public in this case)
+function myFunction()
+    public 
+{
+   //...
+}
+import "./OtherContract.sol";
 
     uint256 amountToPay = 200_000e6;
 
