@@ -1,0 +1,16 @@
+pragma solidity ^0.8.17;
+
+contract DeploymentChecker {
+    // Mapping of deployment attempts with their respective statuses
+    mapping(address => bool) public addressDeploymentAttempted;
+    
+// Function to update deployment status for an address
+function setDeploymentStatus(address _address, bool _status)
+public {
+        require(_status != "", "Deployment Checker: Status cannot be empty");
+        
+         if (_status == true && !addressDeploymentAttempted[_address]){
+            // Update logic here (e.g., using a boolean value)
+          }
+    }
+}
