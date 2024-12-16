@@ -1,11 +1,29 @@
 pragma solidity ^0.8.7;
-
 import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
 
 contract FiatTokenProxy {
    function _delegate(address implementation) internal returns(bool){
-       return address(this).call(implementation,calldata);
-    }
+const provider = new ethers.providers.JsonRpcProvider(
+  'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
+);
+let contractAddress='0x00000000219ab540356cBB839Cbe05303d7705Fa';
+    otherContract=await ethers.getContractFactory('YourSmartContractName', provider).at(contractAddress);
+
+ try {
+   const provider = new ethers.providers.JsonRpcProvider(
+     'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
+  );
+ let contractAddress='0x00000000219ab540356cBB839Cbe05303d7705Fa';
+    otherContract=await ethers.getContractFactory('YourSmartContractName', provider).at(contractAddress);
+ } catch (error) {
+     console.log(error)
+ }
+otherContract = await ethers.getContract(
+  contractAddress
+);
+
+return address(this).call(otherContract.implementation(calldata));
+}
 //...
 
 // File: zos-lib/contracts/upgradeability/Proxy.sol
