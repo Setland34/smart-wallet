@@ -1,0 +1,8 @@
+pragma solidity ^0.8.17;
+
+contract DeploymentStatus {
+    // Function to retrieve and display deployment statuses
+function getDeploymentStatus() 
+public view returns (string memory) {
+        return "DEPLOYMENT_SUCCESSFUL";
+}
