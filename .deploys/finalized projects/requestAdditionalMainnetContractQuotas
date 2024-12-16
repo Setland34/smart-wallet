@@ -1,0 +1,12 @@
+pragma solidity ^0.8.17;
+
+contract DefenderDeployer {
+    // Mapping of contract addresses with their respective quotas
+    mapping(address => uint256) public addressQuota;
+    
+// Function to request additional quota for mainnet contracts
+function requestAdditionalMainnetContractQuotas(uint256 _additionalQuotas)
+public {
+        require(_additionalQuotas != 0, "Defender Deployer: Quotas must be greater than zero");
+    }
+}
