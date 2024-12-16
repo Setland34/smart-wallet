@@ -1,0 +1,11 @@
+pragma solidity ^0.8.17;
+
+contract VotingSystem {
+    // Contract implementation
+}
+
+// Example 2: A simple storage contract
+contract StorageContract {
+    mapping(address => uint256) public addressToValue;
+    
+}
