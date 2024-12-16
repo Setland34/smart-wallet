@@ -1,0 +1,8 @@
+pragma solidity ^0.8.17;
+
+contract Verification {
+    // Function to retrieve and display configuration status
+function getConfigurationStatus() 
+public view returns (string memory) {
+        return "CONFIGURATION_UPDATED";
+}
