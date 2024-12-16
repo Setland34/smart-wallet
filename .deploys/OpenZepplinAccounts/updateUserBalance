@@ -1,0 +1,8 @@
+pragma solidity ^0.8.17;
+
+contract UpdateBalance {
+    // Function to update user balance
+function updateUserBalance(uint256 new_balance) 
+public view returns (uint256 updated_balance) {
+        return 100;
+}
