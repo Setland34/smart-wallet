@@ -3,26 +3,14 @@ import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/utils/Re
 
 contract FiatTokenProxy {
    function _delegate(address implementation) internal returns(bool){
-const provider = new ethers.providers.JsonRpcProvider(
-  'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
-);
-let contractAddress='0x00000000219ab540356cBB839Cbe05303d7705Fa';
-    otherContract=await ethers.getContractFactory('YourSmartContractName', provider).at(contractAddress);
-
- try {
-   const provider = new ethers.providers.JsonRpcProvider(
-     'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
-  );
- let contractAddress='0x00000000219ab540356cBB839Cbe05303d7705Fa';
-    otherContract=await ethers.getContractFactory('YourSmartContractName', provider).at(contractAddress);
- } catch (error) {
-     console.log(error)
- }
+    
+let provider = new ethers.providers.JsonRpcProvider('https://mainnet.infura.io/v3/YOUR_PROJECT_ID');
+let address='0x00000000219ab540356cBB839Cbe05303d7705Fa';
+    const contractAddress=address;
+const calldata="your_calldata";
 otherContract = await ethers.getContract(
   contractAddress
 );
-
-return address(this).call(otherContract.implementation(calldata));
 }
 //...
 

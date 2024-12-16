@@ -1,0 +1,10 @@
+ const { JsonRpcProvider } = require('ethers/providers');
+ let provider = new providers.JsonRpcProvider(
+   'https://mainnet.infura.io/v3/YOUR_PROJECT_ID'
+ );
+    let contractAddress='0x00000000219ab540356cBB839Cbe05303d7705Fa';
+ const otherContractFactory=await ethers.getContractFactory('YourSmartContractName', provider);
+const  otherContract = await otherContract.connect(provider).at(contractAddress);
+
+let txResponse=await otherContract.callStatic.yourFunction(calldata);
+console.log(txResponse);
