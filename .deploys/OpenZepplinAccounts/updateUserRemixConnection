@@ -1,0 +1,8 @@
+pragma solidity ^0.8.17;
+
+contract UpdateConnection {
+    // Function to update user account connection status with remix platform
+function updateUserRemixConnection() 
+public view returns (bool success) {
+        return true;
+}
