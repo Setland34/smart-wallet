@@ -1,0 +1,8 @@
+pragma solidity ^0.8.17;
+
+contract Confirmation {
+    // Function to confirm updates on remix platform connection status
+function confirmRemixConnection() 
+public view returns (bool confirmed) {
+        return true;
+}
